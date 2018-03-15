@@ -286,6 +286,7 @@ export default class Search extends Component {
                 </TouchableOpacity>
               )}
               <TextInput
+                autoFocus={true}
                 ref={ref => (this.textInput = ref)}
                 onLayout={() => focusOnLayout && this.textInput.focus()}
                 style={[
